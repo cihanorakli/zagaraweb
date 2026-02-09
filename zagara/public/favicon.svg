@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    text {
+      /* Using a bold serif stack for an elegant look */
+      font-family: Didot, "Bodoni MT", "Times New Roman", serif;
+      font-weight: bold;
+      fill: #EAAD8B;
+    }
+  </style>
+  <!-- Centered Z without background -->
+  <text x="50" y="85" font-size="100" text-anchor="middle">Z</text>
+</svg>

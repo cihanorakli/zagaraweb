@@ -1,0 +1,127 @@
+.heritage-section {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-container);
+    overflow: hidden;
+    background-color: var(--color-alabaster);
+}
+
+.background-texture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    pointer-events: none;
+    background-size: cover;
+    mix-blend-mode: multiply;
+}
+
+.heritage-container {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    flex-wrap: wrap;
+    /* Handle smaller screens */
+    gap: 4rem;
+}
+
+.text-block {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    padding-right: 2rem;
+}
+
+.heritage-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--color-charcoal);
+    line-height: 0.9;
+    letter-spacing: -0.03em;
+    margin-bottom: 2rem;
+}
+
+.heritage-body {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--color-charcoal);
+    opacity: 0.8;
+    margin-bottom: 3rem;
+    max-width: 400px;
+}
+
+.heritage-meta {
+    display: flex;
+    gap: 2rem;
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.6;
+    border-top: 1px solid var(--color-concrete);
+    padding-top: 1rem;
+    width: fit-content;
+}
+
+.image-block {
+    flex: 1.2;
+    min-width: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* Align caption to right */
+}
+
+.fabric-macro {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    /* Square format for stability */
+    object-fit: cover;
+    /* Blend background */
+    mix-blend-mode: multiply;
+    filter: contrast(1.05);
+    /* Gentle contrast */
+    box-shadow: none;
+
+    /* Fade only top and bottom edges - "Top and Bottom Shadow" effect */
+    mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+}
+
+.caption {
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: var(--color-charcoal);
+    margin-top: 1rem;
+    opacity: 0.5;
+    align-self: flex-start;
+    /* Caption stays left aligned relative to image block context, or change as needed */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 900px) {
+    .heritage-container {
+        flex-direction: column;
+        padding-top: 4rem;
+    }
+
+    .heritage-title {
+        margin-bottom: 1rem;
+    }
+
+    .image-block {
+        width: 100%;
+    }
+}

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@400;700;800&display=swap');
+
+:root {
+  /* Palette: Monochromatic & Muted */
+  --color-alabaster: #F4F2EF;
+  --color-concrete: #CFCFCD;
+  --color-travertine: #E0DDD5;
+  --color-charcoal: #2A2A2A;
+  --color-black: #111111;
+
+  /* Typography */
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --spacing-container: 4rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background: var(--color-concrete);
+  color: var(--color-black);
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-alabaster);
+  color: var(--color-charcoal);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.placeholder-title {
+  font-size: 10vw;
+  text-align: center;
+  margin-top: 20vh;
+  opacity: 0.1;
+  letter-spacing: -0.05em;
+}

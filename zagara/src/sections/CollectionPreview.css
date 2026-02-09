@@ -1,0 +1,165 @@
+.collection-section {
+    padding: var(--spacing-container);
+    background-color: var(--color-travertine);
+    min-height: 100vh;
+    position: relative;
+}
+
+.collection-header {
+    font-size: clamp(2rem, 3vw, 3rem);
+    margin-bottom: 8rem;
+    padding-top: 4rem;
+    color: var(--color-charcoal);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.collection-header .season {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    opacity: 0.6;
+}
+
+.looks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15vh;
+    /* Extreme vertical spacing */
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.look-wrapper {
+    display: flex;
+    gap: 4rem;
+    align-items: flex-end;
+}
+
+/* Asymmetry classes */
+.align-left {
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.align-right {
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.align-center {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.align-center .look-wrapper {
+    gap: 2rem;
+}
+
+.look-image-container {
+    width: clamp(300px, 40vw, 600px);
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    /* Prevent white flash before JS loads */
+}
+
+.look-image {
+    width: 100%;
+    display: block;
+    /* Blend white background into the wall color */
+    mix-blend-mode: multiply;
+    filter: contrast(1.05);
+    transition: transform 0.6s ease-out;
+    /* Stronger fade on all edges and corners */
+    mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%),
+        linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+    mask-composite: intersect;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%),
+        linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+    -webkit-mask-composite: source-in;
+}
+
+.look-image-container:hover .look-image {
+    transform: scale(1.03);
+}
+
+.look-info {
+    max-width: 350px;
+    margin-bottom: 2rem;
+    /* Align with bottom of image typically */
+}
+
+.look-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.look-desc {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.7;
+}
+
+.collection-footer {
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8rem;
+}
+
+.explore-link {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--color-charcoal);
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.explore-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-charcoal);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease;
+}
+
+.explore-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .look-wrapper {
+        flex-direction: column !important;
+        /* Force vertical stacking */
+        gap: 2rem;
+        align-items: flex-start !important;
+        text-align: left !important;
+    }
+
+    .look-image-container {
+        width: 100%;
+    }
+
+    .collection-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

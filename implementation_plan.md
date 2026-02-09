@@ -1,0 +1,78 @@
+# Implementation Plan: Zagara B2B Lookbook
+
+## Goal Description
+Build a prestigious, avant-garde B2B lookbook website for "Zagara by Oraklı Tekstil". The site will function as a "Digital Sculpture Garden," showcasing high-end evening wear with specific focus on textile expertise and sculptural aesthetics.
+
+## Proposed Changes
+
+### Tech Stack
+- **Framework**: Vite + React
+- **Styling**: Vanilla CSS (CSS Modules/Variables) for maximum control.
+- **Animation**: `framer-motion` (for complex transitions and magnetic cursor).
+- **Smooth Scroll**: Custom CSS or lightweight logic.
+
+### Structure
+1.  **Global Styles (`index.css`)**:
+    -   **Colors**: `--color-concrete`, `--color-alabaster`, `--color-travertine`, `--color-charcoal`.
+    -   **Fonts**: Custom font declarations (simulated or Google Fonts equivalent).
+    -   **Reset**: Minimal reset.
+
+2.  **Components**:
+    -   `App.jsx`: Main layout container, cursor interactions.
+    -   `components/MagneticCursor.jsx`: Custom cursor following pointer with magnetic effect on hoverables.
+    -   `sections/Hero.jsx`: Full-screen static image, minimal text placement.
+    -   `sections/Heritage.jsx`: Macro visual focus, text overlay.
+    -   `sections/Lookbook.jsx`: Asymmetrical layout, "floating" elements.
+    -   `sections/Contact.jsx`: Minimalist footer/CTA.
+
+### Visual Assets (Generation Plan)
+-   **Hero**: High-fashion sculptural gown, alabaster/concrete setting.
+-   **Textures**: Fine art paper, smooth concrete.
+-   **Fabrics**: Macro shots of weaves/embellishments.
+
+### About Page (The Atelier)
+#### [NEW] [About.jsx](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/pages/About.jsx)
+- **Hero Section**: "A Heritage of Craftsmanship, A Future of Elegance" title.
+- **History Section**: Story of Orakli Tekstil since 1996.
+- **Mission & Vision**: Two-column layout for core values.
+- **Why Partner With Us**: Grid layout highlighting:
+    - Mass Production Excellence
+    - Global Export Network
+    - Custom Manufacturing
+    - Strategic Location
+
+#### [NEW] [About.css](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/pages/About.css)
+- Styling for typography, grid layouts, and spacing.
+- Consistent "Alabaster" background and "Charcoal" text.
+
+#### [NEW] [About.css](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/pages/About.css)
+- Styling for typography, grid layouts, and spacing.
+- Consistent "Alabaster" background and "Charcoal" text.
+
+### Multi-language Support
+#### [NEW] [LanguageContext.jsx](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/context/LanguageContext.jsx)
+- Context to manage `language` state ('en' | 'tr').
+- Provider component to wrap the app.
+
+#### [NEW] [translations.js](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/data/translations.js)
+- Nested object structure containing all text content keyed by language and section.
+
+#### [MODIFY] [Navbar.jsx](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/components/Navbar.jsx)
+- Add TR/EN toggle switch.
+
+#### [MODIFY] [collections.js](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/data/collections.js)
+- Update objects to have `description_en`, `description_tr`, `contactText_en`, `contactText_tr`.
+
+#### [MODIFY] All Pages
+- Replace hardcoded text with `useLanguage` hook values.
+
+## Verification Plan
+
+### Automated Tests
+-   Verify build succeeds: `npm run build`
+-   Verify dev server starts: `npm run dev`
+
+### Manual Verification
+-   **Aesthetic Check**: strict adherence to monochromatic palette.
+-   **Interaction Check**: Magnetic cursor feel, smooth scroll, parallax timing.
+-   **Responsive Check**: Ensure asymmetry doesn't break on resize (though primary target is likely desktop B2B, must work on mobile).

@@ -1,0 +1,55 @@
+# Task: Zagara B2B Lookbook Website
+
+- [x] **Project Setup** <!-- id: 0 -->
+    - [x] Initialize Vite + React project in `zagara` directory <!-- id: 1 -->
+    - [x] Clean up default boilerplate <!-- id: 2 -->
+    - [x] Install dependencies (`framer-motion`, `lucide-react` for icons if needed) <!-- id: 3 -->
+- [/] **Design System & Assets** <!-- id: 4 -->
+    - [ ] Define CSS variables (Color palette: Concrete, Alabaster, Charcoal) <!-- id: 5 -->
+    - [ ] Setup Typography (Bold Display vs. Grotesk Sans) <!-- id: 6 -->
+    - [x] Generate foundational imagery (Hero, Textures, Gowns) <!-- id: 7 -->
+- [/] **Core Components & Layout** <!-- id: 8 -->
+    - [/] Create `MagneticCursor` component <!-- id: 9 -->
+    - [x] Implement [Hero](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/sections/Hero.jsx#5-42) section (Static, Architectural) <!-- id: 10 -->
+    - [-] Implement [Heritage](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/sections/Heritage.jsx#6-45) section (Removed per user request) <!-- id: 11 -->
+    - [x] Implement [CollectionPreview](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/sections/CollectionPreview.jsx#8-75) (Asymmetrical grid) <!-- id: 12 -->
+    - [x] Implement `B2BContact` (Subtle CTA) <!-- id: 13 -->
+- [x] **Interaction & Polish** <!-- id: 14 -->
+    - [x] Implement smooth scroll behavior <!-- id: 15 -->
+    - [x] Add page/section transitions (Page reveal) <!-- id: 16 -->
+    - [x] Final visual review against "Digital Sculpture Garden" concept <!-- id: 17 -->
+- [x] **Content Updates** <!-- id: 18 -->
+    - [x] Process user uploaded images (`look-red`, `look-black`, `look-purple`) <!-- id: 19 -->
+    - [x] Update [Hero.jsx](file:///Users/cihanorakli/.gemini/antigravity/scratch/zagara/src/sections/Hero.jsx) with new image <!-- id: 20 -->
+    - [x] Update [CollectionPreview.jsx](file:///Users/cihanorakli/.gemini/antigravity/scratch/zagara/src/sections/CollectionPreview.jsx) with new images <!-- id: 21 -->
+    - [x] Cleanup old assets <!-- id: 22 -->
+- [x] **Visual Refinements** <!-- id: 23 -->
+    - [x] Improve Hero image quality (Grain overlay/Filter) <!-- id: 24 -->
+    - [ ] Blend uploaded images with site background (`mix-blend-mode`) <!-- id: 25 -->
+    - [ ] Enhance quality of White Orchid and Sapphire Storm images <!-- id: 26 -->
+    - [x] Restore visibility of Hero text (z-index fix) <!-- id: 26 -->
+    - [x] Soften image edges with CSS masks <!-- id: 27 -->
+- [x] **Navigation & Routing** <!-- id: 28 -->
+    - [x] Install `react-router-dom` <!-- id: 29 -->
+    - [x] Create [Navbar](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/components/Navbar.jsx#4-30) component (Logo + Links) <!-- id: 30 -->
+    - [x] Refactor content into [pages/Home.jsx](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/pages/Home.jsx) <!-- id: 31 -->
+    - [x] Create placeholder pages (Collections, About, Contact) <!-- id: 32 -->
+    - [x] Setup Routing in [App.jsx](file:///Users/cihanorakli/.gemini/antigravity/scratch/zagara/src/App.jsx) <!-- id: 33 -->
+- [ ] **Collections Page** <!-- id: 34 -->
+    - [ ] Create data structure for 6 models (Flower names) <!-- id: 35 -->
+    - [ ] Implement [Collections](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/pages/Collections.jsx#8-94) grid layout ("Windows") <!-- id: 36 -->
+    - [ ] Implement Detail View/Modal logic <!-- id: 37 -->
+    - [x] Style to match "Digital Sculpture Garden" aura <!-- id: 38 -->
+    - [x] Update "Black Dahlia" with user images <!-- id: 39 -->
+    - [x] Implement gallery view in Modal <!-- id: 40 -->
+    - [x] Update "Crimson Rose" with user images <!-- id: 41 -->
+    - [x] Update "Royal Iris" with user images <!-- id: 42 -->
+    - [x] Update "White Orchid" with user images <!-- id: 43 -->
+    - [x] Update "Window 5" (Dark Blue) with user images <!-- id: 44 -->
+    - [x] Update "Window 6" (Green) with user images <!-- id: 45 -->
+    - [x] Update Black Dahlia description and add Contact link <!-- id: 46 -->
+    - [x] Update Crimson Rose description and add Contact link <!-- id: 47 -->
+    - [x] Update Royal Iris description and add Contact link <!-- id: 48 -->
+    - [x] Update White Orchid description and add Contact link <!-- id: 49 -->
+    - [x] Update Sapphire Storm description and add Contact link <!-- id: 50 -->
+    - [x] Update Emerald Ivy description and add Contact link <!-- id: 51 -->

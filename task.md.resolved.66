@@ -1,0 +1,93 @@
+# Task: Zagara B2B Lookbook Website
+
+- [x] **Project Setup** <!-- id: 0 -->
+    - [x] Initialize Vite + React project in `zagara` directory <!-- id: 1 -->
+    - [x] Clean up default boilerplate <!-- id: 2 -->
+    - [x] Install dependencies (`framer-motion`, `lucide-react` for icons if needed) <!-- id: 3 -->
+- [/] **Design System & Assets** <!-- id: 4 -->
+    - [ ] Define CSS variables (Color palette: Concrete, Alabaster, Charcoal) <!-- id: 5 -->
+    - [ ] Setup Typography (Bold Display vs. Grotesk Sans) <!-- id: 6 -->
+    - [x] Generate foundational imagery (Hero, Textures, Gowns) <!-- id: 7 -->
+- [/] **Core Components & Layout** <!-- id: 8 -->
+    - [/] Create `MagneticCursor` component <!-- id: 9 -->
+    - [x] Implement [Hero](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/sections/Hero.jsx#6-46) section (Static, Architectural) <!-- id: 10 -->
+    - [-] Implement [Heritage](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/sections/Heritage.jsx#7-48) section (Removed per user request) <!-- id: 11 -->
+    - [x] Implement [CollectionPreview](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/sections/CollectionPreview.jsx#8-58) (Asymmetrical grid) <!-- id: 12 -->
+    - [x] Implement [B2BContact](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/sections/B2BContact.jsx#6-47) (Subtle CTA) <!-- id: 13 -->
+- [x] **Interaction & Polish** <!-- id: 14 -->
+    - [x] Implement smooth scroll behavior <!-- id: 15 -->
+    - [x] Add page/section transitions (Page reveal) <!-- id: 16 -->
+    - [x] Final visual review against "Digital Sculpture Garden" concept <!-- id: 17 -->
+- [x] **Content Updates** <!-- id: 18 -->
+    - [x] Process user uploaded images (`look-red`, `look-black`, `look-purple`) <!-- id: 19 -->
+    - [x] Update [Hero.jsx](file:///Users/cihanorakli/.gemini/antigravity/scratch/zagara/src/sections/Hero.jsx) with new image <!-- id: 20 -->
+    - [x] Update [CollectionPreview.jsx](file:///Users/cihanorakli/.gemini/antigravity/scratch/zagara/src/sections/CollectionPreview.jsx) with new images <!-- id: 21 -->
+    - [x] Cleanup old assets <!-- id: 22 -->
+- [x] **Visual Refinements** <!-- id: 23 -->
+    - [x] Improve Hero image quality (Grain overlay/Filter) <!-- id: 24 -->
+    - [ ] Blend uploaded images with site background (`mix-blend-mode`) <!-- id: 25 -->
+    - [ ] Enhance quality of White Orchid and Sapphire Storm images <!-- id: 26 -->
+    - [x] Restore visibility of Hero text (z-index fix) <!-- id: 26 -->
+    - [x] Soften image edges with CSS masks <!-- id: 27 -->
+- [x] **Navigation & Routing** <!-- id: 28 -->
+    - [x] Install `react-router-dom` <!-- id: 29 -->
+    - [x] Create [Navbar](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/components/Navbar.jsx#6-60) component (Logo + Links) <!-- id: 30 -->
+    - [x] Refactor content into [pages/Home.jsx](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/pages/Home.jsx) <!-- id: 31 -->
+    - [x] Create placeholder pages (Collections, About, Contact) <!-- id: 32 -->
+    - [x] Setup Routing in [App.jsx](file:///Users/cihanorakli/.gemini/antigravity/scratch/zagara/src/App.jsx) <!-- id: 33 -->
+- [ ] **Collections Page** <!-- id: 34 -->
+    - [ ] Create data structure for 6 models (Flower names) <!-- id: 35 -->
+    - [ ] Implement [Collections](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/pages/Collections.jsx#9-96) grid layout ("Windows") <!-- id: 36 -->
+    - [ ] Implement Detail View/Modal logic <!-- id: 37 -->
+    - [x] Style to match "Digital Sculpture Garden" aura <!-- id: 38 -->
+    - [x] Update "Black Dahlia" with user images <!-- id: 39 -->
+    - [x] Implement gallery view in Modal <!-- id: 40 -->
+    - [x] Update "Crimson Rose" with user images <!-- id: 41 -->
+    - [x] Update "Royal Iris" with user images <!-- id: 42 -->
+    - [x] Update "White Orchid" with user images <!-- id: 43 -->
+    - [x] Update "Window 5" (Dark Blue) with user images <!-- id: 44 -->
+    - [x] Update "Window 6" (Green) with user images <!-- id: 45 -->
+    - [x] Update Black Dahlia description and add Contact link <!-- id: 46 -->
+    - [x] Update Crimson Rose description and add Contact link <!-- id: 47 -->
+    - [x] Update Royal Iris description and add Contact link <!-- id: 48 -->
+    - [x] Update White Orchid description and add Contact link <!-- id: 49 -->
+    - [x] Update Sapphire Storm description and add Contact link <!-- id: 50 -->
+    - [x] Update Emerald Ivy description and add Contact link <!-- id: 51 -->
+- [x] **Contact Page** <!-- id: 52 -->
+    - [x] Design Contact Form UI (Name, Surname, Company, etc.) <!-- id: 53 -->
+    - [x] Style with "Digital Sculpture Garden" aesthetic <!-- id: 54 -->
+    - [x] Prepare form for Formspree integration (placeholder ID) <!-- id: 55 -->
+    - [x] Activate Formspree with user ID <!-- id: 56 -->
+    - [x] Activate Formspree with user ID <!-- id: 56 -->
+    - [x] Implement custom in-site success message <!-- id: 57 -->
+- [x] **About Page (The Atelier)** <!-- id: 58 -->
+    - [x] Implement "Heritage & Future" Hero section <!-- id: 59 -->
+    - [x] Structure History, Mission, and Vision sections <!-- id: 60 -->
+    - [x] Design "Why Partner With Us" grid <!-- id: 61 -->
+    - [x] Style with premium B2B aesthetic <!-- id: 62 -->
+- [x] **Home Page Refinements** <!-- id: 63 -->
+    - [x] Replace placeholder numbers/text in Collection Preview with model descriptions <!-- id: 64 -->
+    - [x] Redirect "Request" and "Book" footer links to Contact page <!-- id: 65 -->
+    - [x] Remove Headquarters and LinkedIn, update Instagram <!-- id: 66 -->
+    - [x] Refactor footer to centered single-column layout <!-- id: 67 -->
+    - [x] Update Collection Preview header text <!-- id: 68 -->
+    - [x] Apply soft bottom gradient fade to Collection Preview images <!-- id: 69 -->
+    - [x] Apply advanced multi-directional fade to soften all image edges <!-- id: 70 -->
+    - [x] Fix white flash on initial load (CSS opacity) <!-- id: 71 -->
+    - [x] Update Collection modal to display specific seasons (2025 Spring/Summer) <!-- id: 72 -->
+- [ ] **Multi-language Support** <!-- id: 73 -->
+    - [x] Create Language Context and Provider <!-- id: 74 -->
+    - [x] Create translation data structure (en/tr) <!-- id: 75 -->
+    - [x] Implement Language Switcher in Navbar <!-- id: 76 -->
+    - [x] Refactor components to use dynamic text (Home, Collections, About, Contact) <!-- id: 77 -->
+    - [x] Update Collection Data for bilingual support <!-- id: 78 -->
+    - [x] Correction: Restore Hero title to "Zagara by Oraklı Tekstil" <!-- id: 79 -->
+    - [x] Correction: Revert translated model names to English in TR descriptions <!-- id: 80 -->
+- [x] **Visual Refinements** <!-- id: 81 -->
+    - [x] Implement "Liquid Glass" effect for Navbar (Apple style) <!-- id: 82 -->
+    - [x] Create custom "Z" favicon <!-- id: 83 -->
+    - [x] Create custom "Z" favicon <!-- id: 83 -->
+    - [x] Update page title to "Zagara | The Atelier" <!-- id: 84 -->
+- [x] **Deployment Preparation** <!-- id: 85 -->
+    - [x] Verify production build (`npm run build`) <!-- id: 86 -->
+    - [x] Create [DEPLOYMENT.md](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/DEPLOYMENT.md) guide <!-- id: 87 -->

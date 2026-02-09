@@ -1,0 +1,57 @@
+# Implementation Plan: Zagara B2B Lookbook
+
+## Goal Description
+Build a prestigious, avant-garde B2B lookbook website for "Zagara by Oraklı Tekstil". The site will function as a "Digital Sculpture Garden," showcasing high-end evening wear with specific focus on textile expertise and sculptural aesthetics.
+
+## Proposed Changes
+
+### Tech Stack
+- **Framework**: Vite + React
+- **Styling**: Vanilla CSS (CSS Modules/Variables) for maximum control.
+- **Animation**: `framer-motion` (for complex transitions and magnetic cursor).
+- **Smooth Scroll**: Custom CSS or lightweight logic.
+
+### Structure
+1.  **Global Styles ([index.css](file:///Users/cihanorakli/.gemini/antigravity/scratch/zagara/src/index.css))**:
+    -   **Colors**: `--color-concrete`, `--color-alabaster`, `--color-travertine`, `--color-charcoal`.
+    -   **Fonts**: Custom font declarations (simulated or Google Fonts equivalent).
+    -   **Reset**: Minimal reset.
+
+2.  **Components**:
+    -   [App.jsx](file:///Users/cihanorakli/.gemini/antigravity/scratch/zagara/src/App.jsx): Main layout container, cursor interactions.
+    -   [components/MagneticCursor.jsx](file:///Users/cihanorakli/.gemini/antigravity/scratch/zagara/src/components/MagneticCursor.jsx): Custom cursor following pointer with magnetic effect on hoverables.
+    -   [sections/Hero.jsx](file:///Users/cihanorakli/.gemini/antigravity/scratch/zagara/src/sections/Hero.jsx): Full-screen static image, minimal text placement.
+    -   [sections/Heritage.jsx](file:///Users/cihanorakli/.gemini/antigravity/scratch/zagara/src/sections/Heritage.jsx): Macro visual focus, text overlay.
+    -   `sections/Lookbook.jsx`: Asymmetrical layout, "floating" elements.
+    -   `sections/Contact.jsx`: Minimalist footer/CTA.
+
+### Visual Assets (Generation Plan)
+-   **Hero**: High-fashion sculptural gown, alabaster/concrete setting.
+-   **Textures**: Fine art paper, smooth concrete.
+-   **Fabrics**: Macro shots of weaves/embellishments.
+
+### About Page (The Atelier)
+#### [NEW] [About.jsx](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/pages/About.jsx)
+- **Hero Section**: "A Heritage of Craftsmanship, A Future of Elegance" title.
+- **History Section**: Story of Orakli Tekstil since 1996.
+- **Mission & Vision**: Two-column layout for core values.
+- **Why Partner With Us**: Grid layout highlighting:
+    - Mass Production Excellence
+    - Global Export Network
+    - Custom Manufacturing
+    - Strategic Location
+
+#### [NEW] [About.css](file:///Users/cihanorakli/.gemini/antigravity/brain/5935fb70-7a23-4715-b361-3387e6fac535/zagara/src/pages/About.css)
+- Styling for typography, grid layouts, and spacing.
+- Consistent "Alabaster" background and "Charcoal" text.
+
+## Verification Plan
+
+### Automated Tests
+-   Verify build succeeds: `npm run build`
+-   Verify dev server starts: `npm run dev`
+
+### Manual Verification
+-   **Aesthetic Check**: strict adherence to monochromatic palette.
+-   **Interaction Check**: Magnetic cursor feel, smooth scroll, parallax timing.
+-   **Responsive Check**: Ensure asymmetry doesn't break on resize (though primary target is likely desktop B2B, must work on mobile).

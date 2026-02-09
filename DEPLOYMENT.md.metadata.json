@@ -1,0 +1,5 @@
+{
+  "artifactType": "ARTIFACT_TYPE_OTHER",
+  "summary": "Deployment guide for the Zagara website. Covers standard hosting options (Vercel, Netlify) suitable for a Vite/React application.",
+  "updatedAt": "2026-02-09T19:58:36.600401Z"
+}
